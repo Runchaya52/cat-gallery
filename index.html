@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สารานุกรมสายพันธุ์แมว</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🐱 สารานุกรมสายพันธุ์แมว</h1>
+        <p>รวมข้อมูลและลักษณะเด่นของน้องแมวยอดนิยม เลือกดูตามหมวดหมู่ด้านล่างได้เลย!</p>
+    </header>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+        <button class="filter-btn" data-filter="shorthair">แมวขนสั้น</button>
+        <button class="filter-btn" data-filter="longhair">แมวขนยาว</button>
+        <button class="filter-btn" data-filter="thai">แมวไทยโบราณ</button>
+    </div>
+
+    <main class="gallery">
+        <div class="card" data-category="shorthair">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=500&q=80" alt="สก็อตติช โฟลด์">
+            <div class="card-content">
+                <span class="badge">แมวขนสั้น</span>
+                <h3>สก็อตติช โฟลด์ (Scottish Fold)</h3>
+                <p>โดดเด่นด้วยใบหูที่พับไปด้านหน้า ดวงตากลมโต นิสัยเรียบร้อย ขี้อ้อน และเข้ากับคนง่าย</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="longhair">
+            <img src="https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?w=500&q=80" alt="เปอร์เซีย">
+            <div class="card-content">
+                <span class="badge">แมวขนยาว</span>
+                <h3>เปอร์เซีย (Persian)</h3>
+                <p>หน้าแบนกลม ขนยาวฟูหนาแน่น นิสัยสุภาพ อ่อนโยน ชอบนอนพักผ่อนในที่เงียบสงบ</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="thai">
+            <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=500&q=80" alt="วิเชียรมาศ">
+            <div class="card-content">
+                <span class="badge">แมวไทยโบราณ</span>
+                <h3>วิเชียรมาศ (Siamese)</h3>
+                <p>แต้มสีน้ำตาลเข้ม 9 จุดบนร่างกาย ดวงตาสีฟ้าสดใส ฉลาด ช่างพูด และติดเจ้าของมาก</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="shorthair">
+            <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=500&q=80" alt="อเมริกัน ชอร์ตแฮร์">
+            <div class="card-content">
+                <span class="badge">แมวขนสั้น</span>
+                <h3>อเมริกัน ชอร์ตแฮร์ (American Shorthair)</h3>
+                <p>ลวดลายคล้ายเสือ (Tabby) ร่างกายแข็งแรง ขี้เล่น ซุกซน และปรับตัวเก่ง</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="longhair">
+            <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=500&q=80" alt="เมนคูน">
+            <div class="card-content">
+                <span class="badge">แมวขนยาว</span>
+                <h3>เมนคูน (Maine Coon)</h3>
+                <p>ยักษ์ใหญ่ใจดีแห่งวงการแมว ตัวโต ขนหนา ปลายหูมีขนแหลม ฉลาดเหมือนสุนัข</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="thai">
+            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=500&q=80" alt="สีสวาด">
+            <div class="card-content">
+                <span class="badge">แมวไทยโบราณ</span>
+                <h3>สีสวาด / โคราช (Korat)</h3>
+                <p>ขนสีเทาเงินเงางาม ดวงตาสีเขียวมรกต เชื่อกันว่าเป็นแมวแห่งโชคลาภและความสุข</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
