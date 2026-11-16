@@ -3,78 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>สารานุกรมสายพันธุ์แมว</title>
+    <title>MeowPedia - สารานุกรมสายพันธุ์แมวรอบโลก</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>🐱 สารานุกรมสายพันธุ์แมว</h1>
-        <p>รวมข้อมูลและลักษณะเด่นของน้องแมวยอดนิยม เลือกดูตามหมวดหมู่ด้านล่างได้เลย!</p>
+        <div class="header-badge">✨ Cat Encyclopedia Collection</div>
+        <h1>🐾 MeowPedia: สารานุกรมสายพันธุ์แมว</h1>
+        <p>สำรวจเอกลักษณ์ นิสัย และความน่ารักของน้องแมว 10 สายพันธุ์จากทั่วทุกมุมโลก</p>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 ค้นหาชื่อสายพันธุ์แมว (เช่น เมนคูน, สฟิงซ์, วิเชียรมาศ)...">
+        </div>
     </header>
 
     <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+        <button class="filter-btn active" data-filter="all">ทั้งหมด (10)</button>
         <button class="filter-btn" data-filter="shorthair">แมวขนสั้น</button>
         <button class="filter-btn" data-filter="longhair">แมวขนยาว</button>
         <button class="filter-btn" data-filter="thai">แมวไทยโบราณ</button>
+        <button class="filter-btn" data-filter="exotic">สายพันธุ์แปลก/หายาก</button>
     </div>
 
     <main class="gallery">
+        <!-- 1 -->
         <div class="card" data-category="shorthair">
-            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=500&q=80" alt="สก็อตติช โฟลด์">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600&q=80" alt="สก็อตติช โฟลด์">
+                <span class="origin-tag">🏴󠁧󠁢󠁳󠁣󠁴󠁿 สกอตแลนด์</span>
+            </div>
             <div class="card-content">
                 <span class="badge">แมวขนสั้น</span>
                 <h3>สก็อตติช โฟลด์ (Scottish Fold)</h3>
-                <p>โดดเด่นด้วยใบหูที่พับไปด้านหน้า ดวงตากลมโต นิสัยเรียบร้อย ขี้อ้อน และเข้ากับคนง่าย</p>
+                <p>ใบหูพับไปด้านหน้าคล้ายนกฮูก ดวงตากลมโต นิสัยเรียบร้อย อ่อนโยน และชอบอยู่ใกล้ชิดเจ้าของ</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐⭐⭐</div>
             </div>
         </div>
 
+        <!-- 2 -->
         <div class="card" data-category="longhair">
-            <img src="https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?w=500&q=80" alt="เปอร์เซีย">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?w=600&q=80" alt="เปอร์เซีย">
+                <span class="origin-tag">🇮🇷 อิหร่าน</span>
+            </div>
             <div class="card-content">
                 <span class="badge">แมวขนยาว</span>
                 <h3>เปอร์เซีย (Persian)</h3>
-                <p>หน้าแบนกลม ขนยาวฟูหนาแน่น นิสัยสุภาพ อ่อนโยน ชอบนอนพักผ่อนในที่เงียบสงบ</p>
+                <p>หน้าแบนกลม ขนยาวฟูหรูหรา นิสัยสุขุม นุ่มนวล ไม่ซุกซน ชอบนอนพักผ่อนในมุมสงบ</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐⭐</div>
             </div>
         </div>
 
+        <!-- 3 -->
         <div class="card" data-category="thai">
-            <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=500&q=80" alt="วิเชียรมาศ">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=600&q=80" alt="วิเชียรมาศ">
+                <span class="origin-tag">🇹🇭 ไทย</span>
+            </div>
             <div class="card-content">
                 <span class="badge">แมวไทยโบราณ</span>
                 <h3>วิเชียรมาศ (Siamese)</h3>
-                <p>แต้มสีน้ำตาลเข้ม 9 จุดบนร่างกาย ดวงตาสีฟ้าสดใส ฉลาด ช่างพูด และติดเจ้าของมาก</p>
+                <p>แต้มสีน้ำตาลเข้ม 9 จุดบนร่างกาย ดวงตาสีฟ้าสดใส ฉลาดหลักแหลม ช่างพูด และรักเจ้าของมาก</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐⭐⭐</div>
             </div>
         </div>
 
-        <div class="card" data-category="shorthair">
-            <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=500&q=80" alt="อเมริกัน ชอร์ตแฮร์">
+        <!-- 4 -->
+        <div class="card" data-category="exotic">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=600&q=80" alt="สฟิงซ์">
+                <span class="origin-tag">🇨🇦 แคนาดา</span>
+            </div>
             <div class="card-content">
-                <span class="badge">แมวขนสั้น</span>
-                <h3>อเมริกัน ชอร์ตแฮร์ (American Shorthair)</h3>
-                <p>ลวดลายคล้ายเสือ (Tabby) ร่างกายแข็งแรง ขี้เล่น ซุกซน และปรับตัวเก่ง</p>
+                <span class="badge">สายพันธุ์แปลก/หายาก</span>
+                <h3>สฟิงซ์ (Sphynx)</h3>
+                <p>แมวไร้ขนที่มีรอยย่นเป็นเอกลักษณ์ ตัวอุ่นนุ่มเหมือนลูกพีช นิสัยร่าเริง ขี้เล่น และชอบซุกผ้าห่ม</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐⭐⭐</div>
             </div>
         </div>
 
+        <!-- 5 -->
         <div class="card" data-category="longhair">
-            <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=500&q=80" alt="เมนคูน">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=600&q=80" alt="เมนคูน">
+                <span class="origin-tag">🇺🇸 สหรัฐอเมริกา</span>
+            </div>
             <div class="card-content">
                 <span class="badge">แมวขนยาว</span>
                 <h3>เมนคูน (Maine Coon)</h3>
-                <p>ยักษ์ใหญ่ใจดีแห่งวงการแมว ตัวโต ขนหนา ปลายหูมีขนแหลม ฉลาดเหมือนสุนัข</p>
+                <p>ยักษ์ใหญ่ใจดีแห่งวงการแมว ตัวโตสง่างาม ปลายหูมีขนแหลม ฉลาดและเชื่องเหมือนสุนัข</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐⭐</div>
             </div>
         </div>
 
+        <!-- 6 -->
+        <div class="card" data-category="shorthair">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600&q=80" alt="อเมริกัน ชอร์ตแฮร์">
+                <span class="origin-tag">🇺🇸 สหรัฐอเมริกา</span>
+            </div>
+            <div class="card-content">
+                <span class="badge">แมวขนสั้น</span>
+                <h3>อเมริกัน ชอร์ตแฮร์ (American Shorthair)</h3>
+                <p>ลวดลายคลาสสิกคล้ายเสือ ร่างกายกำยำแข็งแรง ขี้เล่น ซุกซน และเข้ากับเด็กได้ดี</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <!-- 7 -->
         <div class="card" data-category="thai">
-            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=500&q=80" alt="สีสวาด">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=600&q=80" alt="ขาวมณี">
+                <span class="origin-tag">🇹🇭 ไทย</span>
+            </div>
             <div class="card-content">
                 <span class="badge">แมวไทยโบราณ</span>
-                <h3>สีสวาด / โคราช (Korat)</h3>
-                <p>ขนสีเทาเงินเงางาม ดวงตาสีเขียวมรกต เชื่อกันว่าเป็นแมวแห่งโชคลาภและความสุข</p>
+                <h3>ขาวมณี (Khao Manee)</h3>
+                <p>ขนสีขาวบริสุทธิ์ทั้งตัว มักมีตาสองสี (ฟ้า-เหลือง) เป็นแมวมงคลคู่ราชสำนักไทยมาแต่โบราณ</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card" data-category="exotic">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&q=80" alt="เบงกอล">
+                <span class="origin-tag">🇺🇸 สหรัฐอเมริกา</span>
+            </div>
+            <div class="card-content">
+                <span class="badge">สายพันธุ์แปลก/หายาก</span>
+                <h3>เบงกอล (Bengal)</h3>
+                <p>ลวดลายจุดคล้ายเสือดาวป่า แต่มีนิสัยเชื่อง พลังงานล้นเหลือ ชอบปีนป่ายและเล่นน้ำ</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="card" data-category="longhair">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?w=600&q=80" alt="แร็กดอลล์">
+                <span class="origin-tag">🇺🇸 สหรัฐอเมริกา</span>
+            </div>
+            <div class="card-content">
+                <span class="badge">แมวขนยาว</span>
+                <h3>แร็กดอลล์ (Ragdoll)</h3>
+                <p>ตุ๊กตาผ้าขี้ริ้วแสนนุ่ม ดวงตาสีฟ้ากลมโต เวลาถูกอุ้มจะทิ้งตัวอ่อนปวกเปียกอย่างไว้ใจ</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="card" data-category="exotic">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=600&q=80" alt="มันช์กิ้น">
+                <span class="origin-tag">🇺🇸 สหรัฐอเมริกา</span>
+            </div>
+            <div class="card-content">
+                <span class="badge">สายพันธุ์แปลก/หายาก</span>
+                <h3>มันช์กิ้น (Munchkin)</h3>
+                <p>แมวขาสั้นดุ๊กดิ๊กฉายาดัชชุนแห่งโลกแมว วิ่งไว คล่องแคล่ว นิสัยอยากรู้อยากเห็นตลอดเวลา</p>
+                <div class="stats">❤️ ความขี้อ้อน: ⭐⭐⭐⭐</div>
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>จัดทำขึ้นเพื่อการศึกษา — สารานุกรมสายพันธุ์แมว (MeowPedia) 🐱</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
